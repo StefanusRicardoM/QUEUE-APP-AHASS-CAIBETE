@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Antrean - AHASS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>⚙️ Admin Antrean - HONDA AHASS CAIBETE MOTOR</h1>
+
+  <form id="queueForm">
+    <label for="customer">Atas Nama:</label>
+    <input type="text" id="customer" required>
+
+    <label for="motor">Jenis Motor:</label>
+    <select id="motor" required>
+      <option value="" disabled selected>Pilih model</option>
+      <option>Honda BeAT</option>
+      <option>Honda Genio</option>
+      <option>Honda BeAT Street</option>
+      <option>Honda Scoopy</option>
+      <option>Honda Vario 125</option>
+      <option>Honda Vario 160</option>
+      <option>Honda Stylo 160</option>
+      <option>Honda PCX</option>
+      <option>Honda ADV160</option>
+      <option>Honda Forza</option>
+      <option>Honda CB150 Verza</option>
+      <option>Honda Sonic 150R</option>
+      <option>Honda CB150R Streetfire</option>
+      <option>Honda CB150X</option>
+      <option>Honda CRF150L</option>
+      <option>Honda CBR150R</option>
+      <option>Honda CBR250RR</option>
+      <option>Honda CRF250L</option>
+      <option>Honda ST125 Dax</option>
+      <option>Honda Monkey</option>
+      <option>Honda CRF250 RALLY</option>
+      <option>Honda Revo Fit</option>
+      <option>Honda Revo X</option>
+      <option>Honda Supra X</option>
+      <option>Honda Supra Fit</option>
+      <option>Honda Supra GTR</option>
+      <option>Honda Super Cub C125</option>
+      <option>Honda CT125</option>
+      <option>Honda ICON e:</option>
+      <option>Honda CUV e: &amp; CUV e: RoadSync Duo</option>
+      <option>Honda EM1 e:</option>
+    </select>
+
+    <label for="nopol">Nomor Polisi:</label>
+    <input type="text" id="nopol" required>
+
+    <button type="submit">Tambahkan Antrean</button>
+  </form>
+
+  <h2>Daftar Antrean</h2>
+  <div id="queueContainer"></div>
+
+  <footer>© Cai Bete Corporation, Lda</footer>
+  <script src="script.js"></script>
+</body>
+</html>

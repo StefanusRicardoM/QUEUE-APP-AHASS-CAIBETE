@@ -1,0 +1,135 @@
+/* ==== General Styling ==== */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==== Header Styling ==== */
+h1 {
+    background-color: #FF0000;
+    color: white;
+    padding: 30px;
+    margin: 10px;
+    font-size: 50px;
+    border-radius: 40px;
+}
+
+/* ==== Tampilan Antrean ==== */
+#queueContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1600px;
+    min-height: 50px;
+}
+
+.queue-item {
+    width: 100%;
+    max-width: 1600px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 32px;
+    font-weight: bold;
+    transition: 0.3s;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    color: #000;
+}
+
+/* ==== Status Antrean ==== */
+.queue-item.status-queue {
+    background-color: #9F0C0C;
+    color: white;
+}
+
+.queue-item.status-onprogress {
+    background-color: #B94B23;
+    color: white;
+}
+
+.queue-item.status-finishing {
+    background-color: #426B1F;
+    color: white;
+}
+
+/* ==== Admin Panel Styling ==== */
+#queueForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
+    padding: 12px;
+    width: 280px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 2px solid #FF0000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    background-color: #FF0000;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* ==== Animasi Transisi Antrean ==== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+.queue-item {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+#clock {
+    font-size: 45px;
+    font-weight: bold;
+    color: #FF0000;
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+/* ==== Footer Styling ==== */
+footer {
+    background-color: #ffffff;
+    color: rgb(100, 100, 100);
+    padding: 10px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+select {
+  padding: 12px;
+  width: 280px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: 2px solid #FF0000;
+  border-radius: 5px;
+  text-align: center;
+  background: #fff;
+}
